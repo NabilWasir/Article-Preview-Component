@@ -1,0 +1,250 @@
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: var(--light-grayish-blue);
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  height: 700px;
+  width: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    width: 800px;
+  }
+}
+
+.article-card {
+  width: 330px;
+  height: 470px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .article-card {
+    height: 280px;
+    display: flex;
+    width: 720px;
+  }
+}
+
+.article-image {
+  width: 330px;
+  object-fit: cover;
+  height: 170px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .article-image {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    height: 280px;
+    width: 250px;
+  }
+}
+
+h1 {
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--very-dark-grayish-blue);
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+
+p {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 20px;
+  color: var(--very-dark-grayish-blue);
+}
+
+.texts-user-share {
+  padding: 30px 25px 0 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .texts-user-share {
+    padding: 30px 45px 0 40px;
+  }
+}
+
+.sub-heading {
+  margin: 15px 0 0 0;
+}
+
+.user {
+  display: flex;
+  margin: 25px 0 0 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .user {
+    margin: 20px 0 0 0;
+  }
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+.username {
+  color: var(--very-dark-grayish-blue);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 60px 0 0;
+}
+
+.date {
+  color: var(--grayish-blue);
+  font-size: 0.8rem;
+  padding: 0 60px 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .username {
+    padding: 3px 175px 0 0;
+  }
+}
+
+.share-button {
+  border: 0;
+  width: 30px;
+  height: 30px;
+  background-color: var(--light-grayish-blue);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.share {
+  position: absolute;
+  width: 330px;
+  height: 70px;
+  background-color: var(--very-dark-grayish-blue);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px 0 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .share {
+    bottom: 90px;
+    right: -60px;
+    height: 50px;
+    width: 240px;
+    border-radius: 10px;
+  }
+}
+
+.share-text {
+  color: var(--desaturated-dark-blue);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .share-text {
+    font-size: 0.8rem;
+  }
+}
+
+.social-icons {
+  margin: 0 60px 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .social-icons {
+    margin: 5px 0 0 0;
+  }
+}
+
+.social-icon {
+  margin: 0 0 0 12px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .social-icon {
+    margin: 0 0 0 10px;
+  }
+}
+
+.share-section_share-button {
+  background-color: var(--desaturated-dark-blue);
+}
+
+@media screen and (min-width: 1024px) {
+  .share-section_share-button {
+    display: none;
+  }
+}
+
+.share-section_share-button path {
+  fill: var(--light-grayish-blue);
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.attribution {
+    color: darkblue;
+}
+
+.attribution a {
+    color: rgb(255, 152, 9);
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    width: 100vw;
+    height: 1020px;
+    align-items: center;
+  }
+
+  .article-card {
+    transform: scale(1.8);
+  }
+}
