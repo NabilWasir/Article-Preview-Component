@@ -222,21 +222,6 @@ p {
   fill: var(--light-grayish-blue);
 }
 
-footer {
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    font-size: 0.7rem;
-}
-
-.attribution {
-    color: darkblue;
-}
-
-.attribution a {
-    color: rgb(255, 152, 9);
-}
-
 @media screen and (min-width: 481px) and (max-width: 768px) {
   body {
     width: 100vw;
